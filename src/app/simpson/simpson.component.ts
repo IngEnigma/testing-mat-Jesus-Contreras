@@ -19,8 +19,4 @@ export class SimpsonComponent {
   getArea(fx: any, x0: number, x1: number, seg: number, error: number) {
     return this.simp.area(fx, x0, x1, seg, error);
   }
-
-  getSimpson(fx: any, x0: number, x1: number, seg: number, error: number) {
-    return this.simp.simpson(fx, x0, x1, seg);
-  }
 }
