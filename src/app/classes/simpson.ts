@@ -6,7 +6,7 @@ export class Simpson {
     const resultado = evaluate(operacion, scope);
     return resultado;
   }
-
+  
   area(fx: any, x0: number, x1: number, seg: number, error: number) {
     let a1 = 0,
       a2 = 0,
