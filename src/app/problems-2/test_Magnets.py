@@ -1,5 +1,4 @@
 from Magnets import contar_grupos_imanes
-import pytest
 
 def test_1():
     assert contar_grupos_imanes(6, ['10', '10', '10', '01', '10', '10']) == 3
