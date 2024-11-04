@@ -17,7 +17,6 @@ export class StddevComponent {
   }
 
   getStddev(array: number[]): number {
-    console.log(this.stddev.calcularStddev(array));
     return this.stddev.calcularStddev(array);
   }
 }

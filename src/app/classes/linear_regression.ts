@@ -1,7 +1,6 @@
 export class LinearRegression {
   sumXorY(array: number[]): number {
     var sum = 0;
-    console.log(array);
     for (let i = 0; i < array.length; i++) {
       sum += array[i];
     }
