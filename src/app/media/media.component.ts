@@ -15,14 +15,13 @@ export class MediaComponent {
 
   media : Media;
   util : Utilities;
+  imputString: string = '';
+  result: number | null = null;
 
   constructor() {
     this.media = new Media();
     this.util = new Utilities();
   }
-
-  imputString: string = '';
-  result: number | null = null;
 
   calculateMedia(arrayString: string): number | null {
     const array = this.util.processArray(arrayString);

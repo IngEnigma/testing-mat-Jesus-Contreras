@@ -1,1 +1,9 @@
-<p>stddev works!</p>
+<section class="container">
+    <h1>STDDEV</h1>
+    <label for="arrayInput">ARRAY</label>
+    <input id="arrayInput" [(ngModel)]="imputString"/>
+    <button (click)="calculateStdDev(imputString)">CALCULATE</button>
+    <div>
+        <p *ngIf="result !== null">{{ result }}</p>
+    </div>
+</section>
