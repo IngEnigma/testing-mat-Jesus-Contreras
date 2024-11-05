@@ -1,1 +1,9 @@
-<p>media works!</p>
+<section class="container">
+    <h1>CALCULATE MEDIA</h1>
+    <label for="arrayInput">ARRAY</label>
+    <input id="arrayInput" [(ngModel)]="imputString"/>
+    <button (click)="calculateMedia(imputString)">CALCULATE</button>
+    <div>
+        <p *ngIf="result !== null">{{ result }}</p>
+    </div>
+</section>  
