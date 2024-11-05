@@ -1,1 +1,19 @@
-<p>correlation works!</p>
+<section class="container">
+    <h1>CALCULATE LINEAR REGRESSION</h1>
+    <div id="imputs">
+        <div id="data">
+            <label for="arrayInput">ARRAY 1</label>
+            <input id="arrayInput" [(ngModel)]="imputString1"/>
+            <button id="calculateRXY" (click)="calculateRXY(imputString1, imputString2)">CALCULATE RXY</button>
+
+        </div>
+        <div id="data">
+            <label for="arrayInput">ARRAY 2</label>
+            <input id="arrayInput" [(ngModel)]="imputString2"/>
+            <button id="calculateRR" (click)="calculateRR(imputString1, imputString2)">CALCULATE RR</button>
+        </div>
+    </div>
+    <div id="result">
+        <p *ngIf="result !== null">{{ result }}</p>
+    </div>
+</section>  

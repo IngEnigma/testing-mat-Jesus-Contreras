@@ -45,8 +45,8 @@ export class LinearRegressionComponent {
   }
 
   calculateB1(arrayString1: string, arrayString2: string): number | null {
-  const array1 = this.util.processArray(arrayString1);
-  const array2 = this.util.processArray(arrayString2);
+    const array1 = this.util.processArray(arrayString1);
+    const array2 = this.util.processArray(arrayString2);
     if(array1 && array2){
       this.result = this.getB1(array1, array2);
     }
