@@ -60,6 +60,10 @@ export class CorrelationComponent {
     return this.result;
   }
 
+  getArray(arrayString: string): number[] | null {
+    return this.util.processArray(arrayString);
+  }
+
   getRXY(array1: number[], array2: number[]) {
     let rxy = 0;
     this.getDataOfLinearregression(array1, array2);
