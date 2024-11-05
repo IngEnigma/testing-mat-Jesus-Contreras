@@ -1,1 +1,29 @@
-<p>simpson works!</p>
+<section class="container">
+    <h1>CALCULATE LINEAR REGRESSION</h1>
+    <div id="imputs">
+        <div id="data">
+            <label for="arrayInput">F(X)</label>
+            <input id="arrayInput" [(ngModel)]="fx"/>
+        </div>
+        <div id="data">
+            <label for="arrayInput">X 0</label>
+            <input id="arrayInput" [(ngModel)]="x0"/>
+        </div>
+        <div id="data">
+            <label for="arrayInput">X 1</label>
+            <input id="arrayInput" [(ngModel)]="x1"/>
+        </div>
+        <div id="data">
+            <label for="arrayInput">SEGMENTOS</label>
+            <input id="arrayInput" [(ngModel)]="seg"/>
+        </div>
+        <div id="data">
+            <label for="arrayInput">ERROR</label>
+            <input id="arrayInput" [(ngModel)]="error"/>
+        </div>
+    </div>
+    <button id="calculateSimp" (click)="calculateSimp(fx, x0, x1, seg, error)">CALCULATE</button>
+    <div id="result">
+        <p *ngIf="result !== null">{{ result }}</p>
+    </div>
+</section>  

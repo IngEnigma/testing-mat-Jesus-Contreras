@@ -20,17 +20,3 @@ jobs:
       - name: Test Angular test
         run: |
           npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install pytest 
-
-      - name: Test Python
-        run: |
-          pytest

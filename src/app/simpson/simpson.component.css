@@ -1,0 +1,72 @@
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    color: #354144;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+    color: #354144;
+}
+
+input{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #e2ebeb;
+    font-size: 20px;
+    width: 140px;
+}
+
+button{
+    background-color: #42585c;
+    color: #e2ebeb;
+    border: none;
+    font-weight: 600;
+    font-size: 30px;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#imputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2ebeb;
+    border-radius: 10px;
+    width: 100px;
+    height: 60px;
+}
+
+#data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
