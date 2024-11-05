@@ -1,1 +1,24 @@
-<p>linear-regression works!</p>
+<section class="container">
+    <h1>CALCULATE LINEAR REGRESSION</h1>
+    <div id="imputs">
+        <div id="data">
+            <label for="arrayInput">ARRAY 1</label>
+            <input id="arrayInput" [(ngModel)]="imputString1"/>
+            <button id="calculateB0" (click)="calculateB0(imputString1, imputString2)">CALCULATE B0</button>
+
+        </div>
+        <div id="data">
+            <label for="arrayInput">ARRAY 2</label>
+            <input id="arrayInput" [(ngModel)]="imputString2"/>
+            <button id="calculateB1" (click)="calculateB1(imputString1, imputString2)">CALCULATE B1</button>
+        </div>
+        <div id="data">
+            <label for="arrayInput">X</label>
+            <input id="arrayInput" [(ngModel)]="inputX"/>
+            <button id="calculateYK" (click)="calculateYK(imputString1, imputString2, inputX)">CALCULATE YK</button>
+        </div>
+    </div>
+    <div id="result">
+        <p *ngIf="result !== null">{{ result }}</p>
+    </div>
+</section>  
