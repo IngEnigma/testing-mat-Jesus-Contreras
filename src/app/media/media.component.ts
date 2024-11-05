@@ -26,7 +26,7 @@ export class MediaComponent {
   calculateMedia(arrayString: string): number | null {
     const array = this.util.processArray(arrayString);
     if(array){
-      this.result = this.media.calcularMedia(array);
+      this.result = this.getMedia(array);
     }
     return this.result;
   }
