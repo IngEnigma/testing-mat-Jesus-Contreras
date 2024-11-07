@@ -1,12 +1,11 @@
 export class Tstudent {
   TDistribution(dof: number, limiteInferior: number, limiteSuperior: number, numSegmentos: number): number {
     const anchoSegmento = (limiteSuperior - limiteInferior) / numSegmentos; 
-    const anchoAjustado = (limiteSuperior - limiteInferior) / (3 * numSegmentos); 
+    const anchoAjustado = (limiteSuperior - limiteInferior) / (3 * numSegmentos);
     let result = 0;
 
     for (let segActual = 0; segActual <= numSegmentos; segActual++) {
       const x = limiteInferior + (segActual * anchoSegmento); 
-
       const valorT =
         (this.gamma((dof + 1) / 2) /
           (Math.sqrt(dof * Math.PI) * this.gamma(dof / 2))) *
