@@ -1,1 +1,25 @@
-<p>tstudent works!</p>
+<section class="container">
+    <h1>CALCULATE LINEAR REGRESSION</h1>
+    <div id="imputs">
+        <div id="data">
+            <label for="arrayInput">DOF</label>
+            <input id="arrayInput" [(ngModel)]="dof" type="number"/>
+        </div>
+        <div id="data">
+            <label for="arrayInput">X 0</label>
+            <input id="arrayInput" [(ngModel)]="limiteInferior" type="number"/>
+        </div>
+        <div id="data">
+            <label for="arrayInput">X 1</label>
+            <input id="arrayInput" [(ngModel)]="limiteSuperior" type="number"/>
+        </div>
+        <div id="data">
+            <label for="arrayInput">SEGMENTOS</label>
+            <input id="arrayInput" [(ngModel)]="numSegmentos" type="number"/>
+        </div>
+    </div>
+    <button id="calculateTStudent" (click)="calculateTStudent(dof, limiteInferior, limiteSuperior, numSegmentos)">CALCULATE</button>
+    <div id="result">
+        <p *ngIf="result !== null">{{ result }}</p>
+    </div>
+</section>      
